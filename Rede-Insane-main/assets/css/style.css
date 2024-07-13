@@ -43,9 +43,18 @@ header, footer{
     border-radius: 0.5em;
 }
 
-#login:hover, #baixar:hover{
+#login:hover, #baixar:hover, #carrinho:hover{
     background-color: #d6d8d8 ;
     color:#8534b8;
+}
+
+#carrinho{
+    margin: 20px;
+    font-size: 1.5em;
+    background-color:#bbb8bd;
+    border-color: black;
+    color: black;
+    border-radius: 0.5em;
 }
 
 .nav-item-icon{
@@ -160,6 +169,64 @@ li{
         margin-right: 2em;
     }
 
+#destaques{
+    background-color: #ecf0f0;
+    border-bottom-style: groove;
+    padding: 0.5em;
+    margin-left: 0.01em;
+    margin-right: 0.01em;
+    margin-top: 0px;
+}
+
+#leia-mais{
+    color: #a63ce7;
+}
+
+.card{
+    margin-top: 3em;
+    
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    background-color: #8534b8;
+    border-color: #2f3030;
+}
+
+.btn-primary:hover{
+    color: #8534b8;
+    background-color: #ecf0f0;
+}
+
+.card-img-top{
+    padding-bottom: 2em;
+    border-bottom:#8534b8;
+    border-bottom-style: groove;
+}
+
+#titulo-wiki{
+    background-color: #8534b8;
+    display: grid;
+    justify-content: center;
+    margin-top: 4em;
+    font-size: 1.1em;
+}
+
+#link-wiki{
+    color: #8534b8;
+    font-size: 1.3em;
+}
+
+#link-wiki:hover{
+    color: #a63ce7;
+}
+
 @media (min-width: 992px) and (max-width: 1441px) {
 	#login, #baixar {
         font-size: 1.7em;
@@ -215,6 +282,11 @@ li{
         display: flex;
         justify-content: space-between;
     }
+
+    #destaques{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 767px){
@@ -236,5 +308,9 @@ li{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #imgD{
+        width: 200px;
     }
 }
